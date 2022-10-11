@@ -1,0 +1,278 @@
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Oswald&display=swap" rel="stylesheet"> */
+
+
+
+
+:root {
+    --primColor: #131c29;
+    --secColor: #ff8901;
+    --btnColor: #1e3346;
+    --font: 'Oswald', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* header */
+
+.topheader {
+    padding: 10px 0;
+    background-color: var(--primColor);
+}
+
+.topheader a {
+    color: #777;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.topheader a:hover {
+    color: var(--secColor);
+}
+
+.top-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-item {
+    border-right: 1px solid #777;
+}
+
+.top-nav-item:last-child {
+    border: none;
+}
+
+.bottom-nav {
+    padding: 30px 0;
+
+}
+
+.bottom-nav-link {
+    margin: 0 3px;
+    color: #fff;
+    background-color: var(--primColor);
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.bottom-nav-link:hover {
+    color: #fff;
+    background-color: var(--secColor);
+}
+
+
+/* close header */
+
+
+
+/* main */
+
+.hero-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sliders {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+    height: 30px;
+    /* border: 1px solid orange; */
+    margin: 20px auto;
+}
+
+.slider {
+    width: 25px;
+    height: 25px;
+    background: #777;
+    border-radius: 50%;
+}
+
+.slider:hover {
+    background-color: var(--secColor);
+}
+
+.content-box {
+    border-top: 1px solid #777;
+}
+
+
+.content {
+    padding: 30px 0;
+}
+
+.content-header {
+    color: var(--primColor);
+    font-family: var(--font);
+    font-size: calc(26px + (48 - 26) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content-img {
+    width: 100%;
+}
+
+.smart-text, .strong-text, .stable-text {
+    margin-top: 30px;
+    width: 100%;
+    color: #aaa;
+    font-family: var(--font);
+    font-size: font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+
+}
+
+.more-btn {
+    background-color: var(--btnColor);
+    font-family: var(--font);
+    /* color: #fff;
+    text-transform: uppercase;
+    font-family: var(--font); */
+}
+
+/* .strong-content {
+    border-right: 1px solid #777;
+    border-left: 1px solid #777;
+    padding-left: 20px;
+} */
+
+.content-box:nth-child(2) {
+    border-right: 1px solid #777;
+    border-left: 1px solid #777;
+    /* padding-left: 20px; */
+}
+
+/* close main */
+
+
+
+/* footer */
+
+.topfooter {
+    padding: 50px 0;
+    background: radial-gradient(
+        circle at top,
+        #385a7f, 
+        var(--primColor)
+        ) ;
+}
+
+.footer-content {
+    height: 70vh;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .footer-content {
+        height: 90vh;
+    }
+}
+
+.footer-content .more-btn {
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-header {
+    font-family: var(--font);
+}
+
+.service-list {
+    padding-left: 15px;
+    list-style-image: url('../media/media/cog.png');
+    font-family: var(--font);
+}
+
+.service-item {
+    line-height: 2;
+    font-size: 12px;
+}
+
+
+.opp-list {
+    padding-left: 15px;
+    list-style-image: url(../media/media/chat.png);
+}
+
+.opp-header, .news-header {
+    font-size: 12px;
+}
+
+.opp-item, .news-text {
+    font-family: var(--font);
+    font-size: 12px;
+}
+
+@media (max-width: 576px) {
+    .service-item, .opp-item, .news-text, .opp-header, .news-header {
+        font-size: 16px;
+    }
+}
+/* .news-item {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.news-list {
+    padding-left: 0;
+}
+
+.date-div {
+    width: 60px;
+    height: 60px;
+    font-family: var(--font);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.date-div p {
+    margin: 0;
+    padding: 0;
+}
+
+.date-div1 {
+    background-color: orange;
+}
+
+.date-div2 {
+    background-color: purple;
+}
+
+.date-div3 {
+    background-color: aqua;
+}
+
+.text-div {
+    width: 70%;
+}
+
+.bottomfooter {
+    background-color: #0b1016;
+    padding: 20px 0 50px;
+}
+
+.colophon {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+/* close footer */
